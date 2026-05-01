@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>KOTOV — Barber & Stylist | Премиум барбершоп</title>
+  <meta name="description" content="KOTOV Haircuts — авторские мужские стрижки, барберинг, стайлинг и уход за бородой. Запись онлайн. Премиум сервис в стиле классического барбершопа." />
+  <meta property="og:title" content="KOTOV — Barber & Stylist" />
+  <meta property="og:description" content="Авторские мужские стрижки и барберинг. Премиум сервис." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230b0b0b'/><text x='50%25' y='58%25' text-anchor='middle' font-family='Bebas Neue,Impact,sans-serif' font-size='34' fill='%23d4af6f'>K</text></svg>" />
+</head>
+<body>
+
+  <!-- Top loader -->
+  <div class="loader" id="loader">
+    <div class="loader__razor">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="loader__label">KOTOV</div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">
+        <span class="nav__brand-mark">K</span>
+        <span class="nav__brand-text">KOTOV<small>haircuts</small></span>
+      </a>
+      <nav class="nav__menu" id="navMenu">
+        <a href="#about">О мастере</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Работы</a>
+        <a href="#video">Видео</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="#contact" class="btn btn--gold nav__cta">Записаться</a>
+      <button class="nav__burger" id="navBurger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__eyebrow">
+        <span class="line"></span>
+        <span>Premium Barber Studio</span>
+        <span class="line"></span>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title-row">Авторские</span>
+        <span class="hero__title-row hero__title-row--accent">мужские стрижки</span>
+        <span class="hero__title-row">от <em>KOTOV</em></span>
+      </h1>
+      <p class="hero__sub">
+        Барберинг, классические и современные мужские стрижки, моделирование бороды,
+        королевское бритьё опасной бритвой. Каждая работа — как подпись мастера.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--gold btn--lg">Записаться на стрижку</a>
+        <a href="#gallery" class="btn btn--ghost btn--lg">Смотреть работы</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>8+</strong><span>лет опыта</span></div>
+        <div><strong>3K+</strong><span>довольных клиентов</span></div>
+        <div><strong>100%</strong><span>авторский стиль</span></div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Прокрутить вниз">
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Haircut</span><span>•</span><span>Beard</span><span>•</span><span>Royal Shave</span><span>•</span><span>Kids</span><span>•</span><span>Style</span><span>•</span><span>Color</span><span>•</span>
+      <span>Haircut</span><span>•</span><span>Beard</span><span>•</span><span>Royal Shave</span><span>•</span><span>Kids</span><span>•</span><span>Style</span><span>•</span><span>Color</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__media">
+        <div class="about__photo about__photo--1" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=900&q=80')"></div>
+        <div class="about__photo about__photo--2" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80')"></div>
+        <div class="about__badge">
+          <span>est.</span>
+          <strong>2017</strong>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow"><span class="line"></span>О мастере</p>
+        <h2 class="h2">Я делаю не просто стрижки —<br/><span class="text-gold">я создаю образ.</span></h2>
+        <p>
+          Меня зовут <strong>Kotov</strong>. Уже более 8 лет я создаю авторские мужские образы
+          в традициях классического барберинга и современного стайлинга.
+          Каждый клиент уникален — поэтому каждая стрижка строится индивидуально:
+          под форму лица, тип волос и характер.
+        </p>
+        <p>
+          Моя студия — это атмосфера настоящего мужского клуба: кожаные кресла,
+          горячее полотенце, аромат бергамота и сандала, чёткий звук машинки и идеальный результат.
+        </p>
+        <ul class="about__list">
+          <li><span></span>Сертифицированный барбер</li>
+          <li><span></span>Участник профессиональных чемпионатов</li>
+          <li><span></span>Инструменты Wahl, Andis, BaByliss PRO</li>
+          <li><span></span>Уходовая косметика American Crew, Reuzel</li>
+        </ul>
+        <a href="#services" class="btn btn--gold">Посмотреть услуги</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section section--dark" id="services">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--center"><span class="line"></span>Услуги и цены<span class="line"></span></p>
+        <h2 class="h2 text-center">Прайс-лист <span class="text-gold">мастерской</span></h2>
+        <p class="section__sub text-center">
+          Все услуги включают консультацию, мытьё головы, укладку и финишный стайлинг.
+        </p>
+      </header>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon">✁</div>
+          <h3>Мужская стрижка</h3>
+          <p>Авторская стрижка любой сложности — от классики до фейда и текстурных решений.</p>
+          <div class="service-card__foot">
+            <span class="price">2 500 ₽</span>
+            <span class="duration">60 мин</span>
+          </div>
+        </article>
+
+        <article class="service-card service-card--featured">
+          <div class="service-card__ribbon">Хит</div>
+          <div class="service-card__icon">★</div>
+          <h3>Стрижка + борода</h3>
+          <p>Полный комплекс: стрижка, моделирование бороды, контур опасной бритвой, уход.</p>
+          <div class="service-card__foot">
+            <span class="price">3 800 ₽</span>
+            <span class="duration">90 мин</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">⌬</div>
+          <h3>Моделирование бороды</h3>
+          <p>Чёткие линии, форма по типу лица, горячее полотенце и финишные масла.</p>
+          <div class="service-card__foot">
+            <span class="price">1 800 ₽</span>
+            <span class="duration">45 мин</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">♛</div>
+          <h3>Королевское бритьё</h3>
+          <p>Бритьё опасной бритвой по классическому ритуалу: компрессы, пена, массаж.</p>
+          <div class="service-card__foot">
+            <span class="price">2 200 ₽</span>
+            <span class="duration">50 мин</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">✦</div>
+          <h3>Детская стрижка</h3>
+          <p>Аккуратно, спокойно, с уважением к маленькому джентльмену. Возраст 4+.</p>
+          <div class="service-card__foot">
+            <span class="price">1 500 ₽</span>
+            <span class="duration">40 мин</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">⚜</div>
+          <h3>Камуфляж седины</h3>
+          <p>Профессиональное тонирование, естественный цвет, держится до 4 недель.</p>
+          <div class="service-card__foot">
+            <span class="price">1 200 ₽</span>
+            <span class="duration">30 мин</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="services__cta">
+        <p>Не нашли нужную услугу? Напишите — подберём индивидуальный формат.</p>
+        <a href="#contact" class="btn btn--gold">Записаться</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--center"><span class="line"></span>Портфолио<span class="line"></span></p>
+        <h2 class="h2 text-center">Работы <span class="text-gold">мастера</span></h2>
+        <p class="section__sub text-center">
+          Свежие работы из <a href="https://instagram.com/kotov.haircuts" target="_blank" rel="noopener" class="text-gold">@kotov.haircuts</a> — нажмите, чтобы увеличить.
+        </p>
+      </header>
+
+      <div class="gallery__grid" id="galleryGrid">
+        <!-- Tiles populated by JS for lightbox; src placeholders use Unsplash. Replace with real photos in assets/images/ -->
+      </div>
+
+      <div class="gallery__cta">
+        <a href="https://instagram.com/kotov.haircuts" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+          Открыть Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video section section--dark" id="video">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--center"><span class="line"></span>Видео<span class="line"></span></p>
+        <h2 class="h2 text-center">Reels и <span class="text-gold">процесс работы</span></h2>
+        <p class="section__sub text-center">
+          Атмосфера студии и магия превращений — в коротких роликах.
+        </p>
+      </header>
+
+      <div class="video__grid" id="videoGrid">
+        <!-- Video tiles populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--center"><span class="line"></span>Отзывы<span class="line"></span></p>
+        <h2 class="h2 text-center">Что говорят <span class="text-gold">клиенты</span></h2>
+      </header>
+
+      <div class="reviews__grid">
+        <figure class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <blockquote>
+            «Лучший мастер, у которого я когда-либо стригся. Всегда учитывает мои пожелания
+            и предлагает то, что реально мне идёт. Атмосфера — топ.»
+          </blockquote>
+          <figcaption>
+            <strong>Алексей К.</strong>
+            <span>Постоянный клиент, 3 года</span>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <blockquote>
+            «Долго искал своего барбера — нашёл. Чёткий фейд, идеально оформленная борода,
+            горячее полотенце. Каждый раз уходишь с настроением.»
+          </blockquote>
+          <figcaption>
+            <strong>Дмитрий В.</strong>
+            <span>Клиент с 2022</span>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <blockquote>
+            «Привёл сына — он в восторге. Спокойный подход, классный результат.
+            Теперь стрижёмся вдвоём только здесь.»
+          </blockquote>
+          <figcaption>
+            <strong>Игорь М.</strong>
+            <span>Семейный клиент</span>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <blockquote>
+            «Премиум-сервис без пафоса. Музыка, кофе, диалог по делу.
+            Стрижка держит форму три недели — это показатель.»
+          </blockquote>
+          <figcaption>
+            <strong>Сергей П.</strong>
+            <span>Клиент с 2023</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section section--dark" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="eyebrow"><span class="line"></span>Контакты</p>
+        <h2 class="h2">Записывайся <span class="text-gold">на стрижку</span></h2>
+        <p>
+          Свяжись со мной удобным способом — отвечу в течение нескольких минут.
+          Запись по предоплате 30%, бронь подтверждается лично.
+        </p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon">📍</span>
+            <div>
+              <strong>Адрес студии</strong>
+              <span>Уточняется по записи</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon">⏰</span>
+            <div>
+              <strong>Часы работы</strong>
+              <span>Пн–Сб, 10:00 – 21:00</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon">📞</span>
+            <div>
+              <strong>Телефон</strong>
+              <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon">✉️</span>
+            <div>
+              <strong>Почта</strong>
+              <a href="mailto:hello@kotovhaircuts.ru">hello@kotovhaircuts.ru</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact__socials">
+          <a href="https://instagram.com/kotov.haircuts" target="_blank" rel="noopener" class="social social--ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+            <span>@kotov.haircuts</span>
+          </a>
+          <a href="https://t.me/kotov_haircuts" target="_blank" rel="noopener" class="social social--tg" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M9.78 15.27 9.6 18.9c.27 0 .39-.12.54-.27l1.29-1.23 2.67 1.95c.49.27.84.13.97-.45l1.76-8.27c.16-.7-.26-.98-.74-.8L4.7 13.66c-.68.27-.67.65-.12.83l2.83.88 6.57-4.14c.31-.2.59-.09.36.13"/></svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://wa.me/70000000000" target="_blank" rel="noopener" class="social social--wa" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2 22l4.9-1.6A11 11 0 1 0 20.5 3.5zM12 20.1a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-2.9 1 1-2.8-.2-.3a8.1 8.1 0 1 1 6.5 3.4zm4.7-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.6 0-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form" id="bookForm" novalidate>
+        <h3>Быстрая запись</h3>
+        <p class="contact__form-sub">Оставь заявку — напишу в мессенджер и подтвержу время.</p>
+
+        <label>
+          <span>Имя</span>
+          <input type="text" name="name" required placeholder="Как к тебе обращаться" />
+        </label>
+        <label>
+          <span>Телефон</span>
+          <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" />
+        </label>
+        <label>
+          <span>Услуга</span>
+          <select name="service">
+            <option>Мужская стрижка</option>
+            <option>Стрижка + борода</option>
+            <option>Моделирование бороды</option>
+            <option>Королевское бритьё</option>
+            <option>Детская стрижка</option>
+            <option>Камуфляж седины</option>
+          </select>
+        </label>
+        <label>
+          <span>Дата и время</span>
+          <input type="text" name="datetime" placeholder="Напр. 12 мая, 18:00" />
+        </label>
+        <label>
+          <span>Комментарий</span>
+          <textarea name="comment" rows="3" placeholder="Пожелания, ссылки на референсы…"></textarea>
+        </label>
+        <button type="submit" class="btn btn--gold btn--lg btn--block">Записаться</button>
+        <p class="contact__form-success" id="formSuccess">Заявка отправлена! Скоро свяжусь.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-mark">K</span>
+        <div>
+          <strong>KOTOV</strong>
+          <small>Premium Barber Studio</small>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <a href="#about">О мастере</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Работы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> KOTOV Haircuts. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Назад">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Вперёд">›</button>
+    <div class="lightbox__stage" id="lightboxStage"></div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
