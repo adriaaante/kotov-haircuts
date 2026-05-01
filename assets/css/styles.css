@@ -803,12 +803,16 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .footer__nav a { color: var(--text-dim); font-size: .92rem; }
 .footer__copy { color: var(--muted); font-size: .85rem; margin: 0; }
 
-/* ---------- Floating developer badge ---------- */
+/* ---------- Developer credit (static at page end) ---------- */
+.dev-credit {
+  margin-top: 30px;
+  padding: 26px 0 4px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--line);
+}
 .dev-badge {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 95;
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -826,7 +830,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   transition: transform .35s cubic-bezier(.2,.7,.3,1.4),
               box-shadow .35s ease,
               border-color .35s ease;
-  animation: devBadgeIn .8s ease .8s both, devBadgeGlow 3.2s ease-in-out 1.6s infinite;
+  animation: devBadgeGlow 3.2s ease-in-out infinite;
   isolation: isolate;
   overflow: hidden;
 }
@@ -932,10 +936,6 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 }
 .dev-badge__pulse--2 { animation-delay: 1.3s; }
 
-@keyframes devBadgeIn {
-  0%   { opacity: 0; transform: translateY(20px) scale(.9); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
 @keyframes devBadgeGlow {
   0%, 100% {
     box-shadow:
@@ -956,12 +956,8 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 }
 
 @media (max-width: 720px) {
-  .dev-badge {
-    right: 12px;
-    bottom: 12px;
-    padding: 8px 14px 8px 10px;
-    gap: 10px;
-  }
+  .dev-credit { margin-top: 22px; padding: 20px 0 2px; }
+  .dev-badge { padding: 8px 14px 8px 10px; gap: 10px; }
   .dev-badge__logo { width: 30px; height: 30px; }
   .dev-badge__pulse { left: 25px; width: 30px; height: 30px; margin: -15px 0 0 -15px; }
   .dev-badge__text small { font-size: .58rem; letter-spacing: .22em; }
